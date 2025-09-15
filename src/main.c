@@ -9,7 +9,7 @@ int main(int argc, char *argv[]){
 		double r = 0;
 		if(strcmp(op, "car") == 0){
 			char* a = argv[2];
-			r = _car(atof(a) * atof(a));
+			r = _car(atof(a));
 			printf("%lf",r);
 		}
 	}
