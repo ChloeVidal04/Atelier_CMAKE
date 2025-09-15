@@ -92,7 +92,7 @@ jobs:
 
   Deploy:
       runs-on: ubuntu-latest
-      needs: [Compilation, Test_Add]   # attend la fin de tous les tests
+      needs: [Compilation, Test_Add, Test_Sub, Test_Div, Test_Mul, Test_Car]   # attend la fin de tous les tests
       steps:
         - name: Deploy
           run: echo "Déploiement de la solution"
