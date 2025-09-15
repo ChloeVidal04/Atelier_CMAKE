@@ -4,6 +4,16 @@
 #include "./../include/calculator.h"
 
 int main(int argc, char *argv[]){
+	if(argc == 3){
+		char* op = argv[1];
+		double r = 0;
+		if(strcmp(op, "car") == 0){
+			char* a = argv[2];
+			r = _car(atof(a));
+			printf("%lf",r);
+		}
+	}
+
 	if (argc == 4)
 	{
 	char* op = argv[1];
